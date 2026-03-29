@@ -1,4 +1,5 @@
 import PageHero from "@/components/ui/PageHero";
+import KakaoMap from "@/components/ui/KakaoMap";
 import { COMPANY } from "@/constants/company";
 
 export const metadata = {
@@ -20,7 +21,7 @@ export default function LocationPage() {
                 <h3 className="font-semibold text-[var(--color-gray-800)] mb-1">
                   주소
                 </h3>
-                <p>{COMPANY.address || "주소를 입력해 주세요"}</p>
+                <p>{COMPANY.address}</p>
               </div>
               <div>
                 <h3 className="font-semibold text-[var(--color-gray-800)] mb-1">
@@ -36,9 +37,10 @@ export default function LocationPage() {
               </div>
             </div>
           </div>
-          <div className="bg-[var(--color-gray-100)] rounded-xl h-80 flex items-center justify-center text-[var(--color-gray-600)]">
-            지도 영역 (카카오맵/네이버맵 연동)
-          </div>
+          <KakaoMap
+            address={COMPANY.address}
+            className="rounded-xl h-80"
+          />
         </div>
       </section>
     </>
