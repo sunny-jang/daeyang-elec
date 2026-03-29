@@ -9,7 +9,7 @@ export const metadata = {
 export default function ProductsPage() {
   return (
     <>
-      <PageHero title="주요개발제품" description="대양전자의 주요 제품 라인업" />
+      <PageHero title="주요개발제품" description="대양전자의 주요 개발 제품 라인업" />
       <section className="max-w-6xl mx-auto px-4 py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {PRODUCTS.map((product) => (

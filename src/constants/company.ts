@@ -3,7 +3,7 @@ export const COMPANY = {
   nameEn: "DAEYANG Electronics",
   phone: "010-3717-2207",
   email: "dye2000g@gmail.com",
-  address: "인천광역시 동구 방충로 37번길 30(인천산업유통센터) 8동 314호",
+  address: "인천광역시 동구 방축로 37번길 30 인천산업유통센터 8동 314호",
   ceo: "장종훈",
   established: "1994",
   businessNumber: "118-04-68314",

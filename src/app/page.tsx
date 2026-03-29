@@ -31,7 +31,7 @@ export default function Home() {
               href="/products"
               className="px-6 py-3 bg-[var(--color-accent)] text-[var(--color-primary-dark)] font-semibold rounded-lg hover:bg-[var(--color-accent-light)] transition-colors"
             >
-              제품 보기
+              개발 제품 보기
             </Link>
             <Link
               href="/contact"
@@ -51,7 +51,7 @@ export default function Home() {
               주요 개발 제품
             </h2>
             <p className="text-[var(--color-gray-600)]">
-              대양전자의 주요 제품 라인업을 소개합니다
+              대양전자의 주요 개발 제품 라인업을 소개합니다
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
