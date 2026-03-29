@@ -34,7 +34,7 @@ export default function CompanyPage() {
             </p>
           </div>
           <div className="mt-8 text-right text-[var(--color-primary-dark)] font-semibold">
-            {COMPANY.name} 대표이사 {COMPANY.ceo}
+            {COMPANY.name} 대표 {COMPANY.ceo}
           </div>
         </div>
       </section>

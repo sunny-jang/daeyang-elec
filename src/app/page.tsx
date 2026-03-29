@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { COMPANY, PRODUCTS } from "@/constants/company";
 
@@ -5,8 +6,15 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-[var(--color-primary)] text-white">
-        <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-primary-dark)] to-[var(--color-primary)] opacity-90" />
+      <section className="relative bg-[var(--color-primary)] text-white overflow-hidden">
+        <Image
+          src="/images/main_top.png"
+          alt="대양전자 MCU 메인 이미지"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-primary-dark)]/85 to-[var(--color-primary)]/50" />
         <div className="relative max-w-6xl mx-auto px-4 py-28 md:py-40">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
             MCU·임베디드 소프트웨어 개발 전문,
