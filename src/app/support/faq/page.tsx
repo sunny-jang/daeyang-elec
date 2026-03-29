@@ -23,7 +23,7 @@ export default function FaqPage() {
 
   return (
     <>
-      <PageHero title="기술지원" description="자주 묻는 질문" />
+      <PageHero title="기술지원" description="자주 묻는 질문" image="/images/support_top.png" />
       <section className="max-w-3xl mx-auto px-4 py-16">
         <div className="space-y-3">
           {FAQ_ITEMS.map((item, i) => (
