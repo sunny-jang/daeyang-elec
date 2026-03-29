@@ -5,7 +5,7 @@ import PageHero from "@/components/ui/PageHero";
 
 const FAQ_ITEMS = [
   {
-    q: "제품 구매는 어떻게 하나요?",
+    q: "개발진행은 어떻게 하나요?",
     a: "전화 또는 이메일로 문의해 주시면 상세히 안내해 드리겠습니다.",
   },
   {
