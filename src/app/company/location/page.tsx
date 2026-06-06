@@ -9,7 +9,7 @@ export const metadata = {
 export default function LocationPage() {
   return (
     <>
-      <PageHero title="회사소개" description="오시는 길" />
+      <PageHero title="회사소개" description="오시는 길" image="/images/company_top.png" imagePosition="center" />
       <section className="max-w-6xl mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 gap-12">
           <div>

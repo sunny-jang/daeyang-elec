@@ -11,6 +11,7 @@ export default function Footer() {
             <div className="font-bold text-xl mb-2">{COMPANY.name}</div>
             <div className="text-sm text-gray-300 mb-4">{COMPANY.nameEn}</div>
             <div className="text-sm text-gray-300 space-y-1">
+              <p>사업자등록번호. {COMPANY.businessNumber}</p>
               <p>Tel. {COMPANY.phone}</p>
               <p>Email. {COMPANY.email}</p>
               {COMPANY.address && <p>{COMPANY.address}</p>}

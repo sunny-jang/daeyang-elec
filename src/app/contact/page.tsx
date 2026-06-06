@@ -40,7 +40,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <PageHero title="견적문의" description="제품 견적 요청" />
+      <PageHero title="상담·견적 문의" description="개발 상담 및 견적 요청" image="/images/contact_top.png" imagePosition="center 75%" />
       <section className="max-w-6xl mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact info */}
@@ -49,6 +49,14 @@ export default function ContactPage() {
               연락처 정보
             </h2>
             <div className="space-y-6">
+              <div>
+                <h3 className="font-semibold text-[var(--color-gray-800)] mb-1">
+                  사업자등록번호
+                </h3>
+                <p className="text-[var(--color-gray-600)] text-lg">
+                  {COMPANY.businessNumber}
+                </p>
+              </div>
               <div>
                 <h3 className="font-semibold text-[var(--color-gray-800)] mb-1">
                   전화
@@ -84,9 +92,12 @@ export default function ContactPage() {
 
           {/* Quote form */}
           <div>
-            <h2 className="text-2xl font-bold text-[var(--color-primary-dark)] mb-6">
-              견 적 문 의
+            <h2 className="text-2xl font-bold text-[var(--color-primary-dark)] mb-2">
+              상담·견적 문의
             </h2>
+            <p className="text-[var(--color-gray-600)] text-sm mb-6">
+              개발 가능 여부 확인이나 간단한 상담도 편하게 문의해 주세요.
+            </p>
 
             {status === "success" ? (
               <div className="bg-green-50 border border-green-200 rounded-lg p-6 text-center">
@@ -206,7 +217,7 @@ export default function ContactPage() {
                   disabled={status === "sending"}
                   className="w-full py-3 bg-[var(--color-primary)] text-white font-semibold rounded-lg hover:bg-[var(--color-primary-light)] transition-colors disabled:opacity-50"
                 >
-                  {status === "sending" ? "발송 중..." : "견적 문의하기"}
+                  {status === "sending" ? "발송 중..." : "제출하기"}
                 </button>
               </form>
             )}
